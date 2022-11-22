@@ -1,0 +1,100 @@
+h1 {
+    font-weight: 900;
+    font-size: 48px;
+    letter-spacing: -.5px;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 60px;
+    letter-spacing: -.5px;
+}
+
+p {
+    margin-top: 20px;
+}
+
+#top-bunner {
+    overflow: hidden;
+    height: 80px;
+}
+
+
+/* #top-bunner::before {
+    content: url(img/bunner\ bg-effects\ sx.png);
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+
+#top-bunner::after {
+    content: url(img/bunner\ bg-effects\ dx.png);
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+ */
+#top-bunner>img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#top-bunner .bg-bunner {
+    transition: 2s;
+}
+
+#top-bunner .planet-bunner.sx {
+    transition: .5s;
+}
+
+#top-bunner .planet-bunner.dx {
+    transition: transform 2s;
+
+
+}
+
+#top-bunner:hover .bg-bunner {
+    transform: scaleX(120%);
+}
+
+#top-bunner:hover .planet-bunner.sx {
+    transform: scaleX(160%);
+
+}
+
+#top-bunner:hover .planet-bunner.dx {
+    transform: scale(190%) translateX(-400px);
+}
+
+
+.jumbo-container {
+    margin-top: 100px;
+}
+
+.jumbo-img {
+    width: 110%;
+    margin-left: -60px;
+}
+
+hgroup {
+    padding-top: 60px;
+}
+
+h1 {
+    padding: 30px 0 30px 0;
+}
+
+.rainbow {
+    background: -webkit-linear-gradient(315deg, #42d392 25%, #647eff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#link-container a {
+    font-size: 30px margin
+}

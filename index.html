@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- indispensabile per far funzionare le media-queries -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>TITOLO</title>
+
+
+    <!-- font-family: 'Roboto', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- font-family: fontawesome -->
+    <script src="https://kit.fontawesome.com/a19b158346.js" crossorigin="anonymous"></script>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <!-- my-css -->
+    <link rel="stylesheet" href="style.css">
+
+
+    <!-- vue.Js -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+</head>
+
+<body>
+    <div id="app">
+
+        <section id="top-bunner" class="position-relative">
+            <img src="img/bunner-bg.png" alt="" class="bg-bunner">
+           <img src="img/bunner bg-effects sx.png" alt="" class="planet-bunner sx">
+            <img src="img/bunner bg-effects dx.png" alt="" class="planet-bunner dx">
+        </section>
+
+        <section>
+            <div class="container jumbo-container">
+
+                <div class="row">
+                    <div class="col-6">
+                        <img class="jumbo-img" :src="logo" :alt="`${name} logo`">
+                    </div>
+
+                    <div class="col-6 ">
+                        <hgroup>
+                            <h1 :class="">let's start with {{name}}</h1>
+                            <h2 class="title">
+                                the
+                                <span class="rainbow">progressive </span>
+                                javascript framework
+                            </h2>
+                        </hgroup>
+
+                        <p>An approachable, performant and versatile framework for building web user interfaces. <br>
+                            <a class="link-primary" href=" https://vuejs.org/guide/introduction.html">{{name}}
+                                introduction guide</a>
+                        </p>
+                    </div>
+                </div>
+                    <div id="link-container" class=" d-flex justify-content-center gap-5 py-5">
+
+                        <a class="btn btn-success opacity-75" href="#">why vue</a>
+                        <a class="btn btn-light" href="#"> get started</a>
+                        <a class="btn  btn-light" href="#">install</a>
+                    </div>
+        
+            </div>
+
+    </div>
+    </section>
+
+
+
+
+
+
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
